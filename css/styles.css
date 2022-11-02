@@ -1,0 +1,28 @@
+    h2 {
+    hyphens: manual;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-style: normal;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  <p>
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Roboto Light", Sans-serif;
+    font-size: 18.5px;
+    font-weight: normal;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  </p>
