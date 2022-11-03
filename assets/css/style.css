@@ -285,7 +285,8 @@ nav {
 .banner{
   height: 100%;
   width: 100%;
-  
+  /* background-image:var(--main) url('../img/thumb.png');
+  background-size: cover; */
   background-color: var(--main);
 }
 .banner-vid{
@@ -575,6 +576,28 @@ input:checked + .slider:before {
 .svg-icon circle {
   stroke: #fff;
   stroke-width: 1;
+}
+.logo-bottom{
+  position: absolute;
+  bottom: 40%;
+  padding: 5px;
+  left: 50%;
+  transform: translate(-50%,50%);
+  background-color: var(--main);
+  border-radius: 5px;
+  box-shadow: 0px 3px 17px 20px;
+}
+.logo-bottom img{
+  height: 150px;
+}
+.copy{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  letter-spacing: 3px;
+  color: var(--second);
+  transform: translateX(-50%);
+  font-size:1em;
 }
 
 /* heading popins black 35

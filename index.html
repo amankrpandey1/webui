@@ -73,7 +73,7 @@
             </ul>
         </div>
     <div class="banner">
-        <video class="banner-vid" autoplay="true" poster="./assets/img/thumb.png" loop="true">
+        <video id="Vid" class="banner-vid" autoplay="false" onclick="this.play()" poster="./assets/img/thumb.png">
             <source src="./assets/vids/banner.mp4" type="video/mp4" >
         </video>
     </div>
@@ -83,8 +83,8 @@
         <div class="logo">
             <img src="assets/img/drone-logo.png" alt="company-logo" class="img-responsive" /> 
         </div>
-        <video id="weinnovate" muted="true" autoplay="true" loop="true" loading="lazy">
-            <source src= "https://drone.thegoodsboxes.com/wp-content/uploads/2022/10/2nd%20page%20video2.mp4">
+        <video id="weinnovate" autoplay="true" loop="true" loading="lazy">
+            <source src= "./assets/vids/drone_cta.mp4">
           </video>
     </section>
     <!-- section 2 statrs here -->
@@ -116,21 +116,21 @@
             <div class="carousel-inner">
                 <!-- First Carousel -->
                 <div class="carousel-item active">
-                <video  width="100%" height="100%" muted="true" onclick="this.play()" poster="./assets/img/Anim1_thumb.jpg">
+                <video  width="100%" height="100%" onclick="this.play()" poster="./assets/img/Anim1_thumb.jpg">
                     <source src= "./assets/vids/Anim_1.mp4">
                 </video>
                 </div>
         
                 <!-- Second Carousel -->
                 <div class="carousel-item">
-                <video  width="100%" height="100%" muted="true" onclick="this.play()" poster="./assets/img/Anim2_thumb.jpg">
+                <video  width="100%" height="100%" onclick="this.play()" poster="./assets/img/Anim2_thumb.jpg">
                     <source src= "./assets/vids/Anim_2.mp4">
                 </video>
                 </div>
         
                 <!-- Third Carousel -->
                 <div class="carousel-item">
-                <video  width="100%" height="100%" muted="true" onclick="this.play()" poster="./assets/img/Anim3_thumb.jpg">
+                <video  width="100%" height="100%" onclick="this.play()" poster="./assets/img/Anim3_thumb.jpg">
                     <source src= "./assets/vids/Anim_3.mp4">    
                 </video>  
                 </div>
@@ -263,8 +263,8 @@
     </section>
     <!-- training section ends here -->
     <section class="container-fluid Anim-video">
-        <video  width="100%" height="100%" muted="true" onclick="this.play()" poster="https://drone.thegoodsboxes.com/wp-content/uploads/2022/10/Anim-4.jpg">
-            <source src= "https://drone.thegoodsboxes.com/wp-content/uploads/2022/10/Anim%204.mp4">
+        <video  width="100%" height="100%" onclick="this.play()" poster="https://drone.thegoodsboxes.com/wp-content/uploads/2022/10/Anim-4.jpg">
+            <source src= "./assets/vids/Anim_4.mp4">
         </video>
     </section>
     <section class="explore">
@@ -333,7 +333,7 @@
             </h2>
             <hr class="solid">
             <br>
-        <div class="container">
+        <div class="container text-center">
             <div class="row text-center">
                 <div class="col">
                     <b>HEADQUARTERS</b><br>
@@ -356,8 +356,24 @@
                     E-mail: info@mphibr.com
                 </div>
             </div>
+            <div class="logo-bottom">
+                <img src="./assets/img/drone-logo.png">
+            </div>
+            <p class="copy">
+                Copyright 2022 | All Rights Reserved
+            </p>
         </div>
     </section>
+<script>
+      v = document.getElementById("Vid")
+      thum = document.getElementsByClassName("thumb")
+      v.onended = function() {
+          document.getElementById("weinnovate").scrollIntoView();
+          document.getElementById("weinnovate").load();
+          v.load();
+      };
+    </script>
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./assets/js/index.js"></script>
