@@ -1,14 +1,14 @@
-$(".banner-vid").prop('muted', true);
+$("video").prop('muted', true);
 
-(document).ready(function() {
-$("#switch-container").click( function (){
-    if( $("banner-vid").prop('muted') ) {
-          $("banner-vid").prop('muted', false);
-    } else {
-      $("banner-vid").prop('muted', true);
-    }
-  });
-});
+// $(document).ready(function() {
+// $("#switch-container").click(function (){
+//     if( $(".banner-vid").prop('muted') ) {
+//           $(".banner-vid").prop('muted', false);
+//     } else {
+//       $(".banner-vid").prop('muted', true);
+//     }
+//   });
+// });
 
 
 $(document).ready(function() {
@@ -58,6 +58,11 @@ function toggleSoundOnOff()  {
   } else if (soundOn == false) {
     soundOn = true
     console.log("soundOn: ", soundOn)
+  }
+  if( $("video").prop('muted') ) {
+    $("video").prop('muted', false);
+  } else {
+    $("video").prop('muted', true);
   }
 }
 

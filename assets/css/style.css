@@ -536,7 +536,7 @@ input:before {
 }
 
 input:checked + .slider {
-  background-color: #2196F3; /* blue */
+  background-color: var(--ter); /* blue */
 }
 
 input:focus + .slider {
