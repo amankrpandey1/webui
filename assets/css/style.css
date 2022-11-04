@@ -326,8 +326,8 @@ nav {
 }
 .logo{
   position: absolute;
-  top: 10%;
-  padding: var(--padding-sec);
+  top: 0;
+  padding: var(--padding-sec) 0;
 
 }
 .logo img{
@@ -635,7 +635,7 @@ background-size: cover; */
 .img-pratyaksh>img:nth-child(1){
   display: initial;
 }
-
+/* media starte here---------------------------------------------------------- */
 @media (max-width: 768px) {
   .nav-right {
     position: absolute;
@@ -646,9 +646,11 @@ background-size: cover; */
   .visible-xs {
     display: none;
   }
-  .logo{
+  .logo {
+    position: absolute;
     top: 0;
-  }
+    padding: var(--padding-sec) 0;
+}
   .pratyaksh{
     background:var(--main) url("../img/wdsdwesa.jpeg");
     background-size: contain;
