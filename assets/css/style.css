@@ -58,7 +58,7 @@ section.cover{
   width: 400px;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: -1;
   right: 0;
   background-color: transparent;
   -webkit-transition: all .7s .2s ease-in-out;
@@ -229,6 +229,7 @@ nav {
 }
 .sidebar.active{
   background-color: #201f1f;
+  z-index: 1;
 }
 .sidebar-item.active {
   opacity: 1;
@@ -487,18 +488,6 @@ h4{
   }
 }
 
-@media (min-width: 768px) {
-  .nav-right {
-    position: absolute;
-  }
-  .hidden-xs {
-    display: block;
-  }
-  .visible-xs {
-    display: none;
-  }
-}
-
 #switch-container {
   top: 2%;
   left: 2%;
@@ -638,3 +627,81 @@ para roboto light 18.5 px */
 /* background-position: center right;
 background-repeat: no-repeat;
 background-size: cover; */
+
+/* media width */
+.img-pratyaksh>img:nth-child(2){
+  display: none;
+}
+.img-pratyaksh>img:nth-child(1){
+  display: initial;
+}
+
+@media (max-width: 768px) {
+  .nav-right {
+    position: absolute;
+  }
+  .hidden-xs {
+    display: block;
+  }
+  .visible-xs {
+    display: none;
+  }
+  .logo{
+    top: 0;
+  }
+  .pratyaksh{
+    background:var(--main) url("../img/wdsdwesa.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .info-pratyaksh h2 {
+    font-size: 4vw;
+  }
+  .info-pratyaksh > p {
+      font-size: 1.8vw;
+      letter-spacing: 1px;
+      padding: 2px;
+  }
+
+  .img-pratyaksh {
+    overflow: hidden;
+    height: 100vh;
+  }
+  .img-pratyaksh>img:nth-child(1){
+    display: none;
+  }
+  .img-pratyaksh>img:nth-child(2){
+    display: initial;
+    margin-left: -6%;
+  }
+  .training{
+    background: var(--main) url("../img/Website-Part-2-asdadsadsasd.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .info-training h2{
+    font-size: 5vw;
+    color: #000000;
+    font-weight: 600;
+  }
+  .info-training>p{
+    font-size: 2vw;
+    color: #000000;
+    letter-spacing: 1px;
+  }
+  .contact-us h2 {
+    font-size: 5vw;
+  }
+  .contact-us p{
+    font-size: 2vw;
+    color: #000000;
+    letter-spacing: 1px;
+  }
+  .contact-us{
+    height: max-content;
+    background: #95d1f4 !important;
+  }
+
+}
