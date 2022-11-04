@@ -1,5 +1,5 @@
 :root {
-    --main: #000000;
+    --main: #000;
     --second: #ffffff;
     --ter:#ea3732;
     --padding-main:10px;
@@ -17,7 +17,7 @@
   }
   h1,h2,h3,h5{
     font-family: 'Poppins Black', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 2px;
   }
   p,span,a{
@@ -26,6 +26,7 @@
     font-weight: 100;
     /* letter-spacing: 2px; */
   }
+  p{color: #000;}
   body,
   html {
     height: 100%;
@@ -59,11 +60,12 @@ section.cover{
 
 .sidebar {
   height: 100%;
-  width: 400px;
+  width: 20%;
   position: fixed;
   top: 0;
   z-index: -1;
   right: 0;
+  overflow-x: hidden !important;
   background-color: transparent;
   -webkit-transition: all .7s .2s ease-in-out;
   -moz-transition: all .7s .2s ease-in-out;
@@ -149,11 +151,11 @@ section.cover{
 }
 
 .move-to-left {
-  -webkit-transform: translateX(-400px);
-  -moz-transform: translateX(-400px);
-  -ms-transform: translateX(-400px);
-  -o-transform: translateX(-400px);
-  transform: translateX(-400px);
+  -webkit-transform: translateX(-18vw);
+  -moz-transform: translateX(-18vw);
+  -ms-transform: translateX(-18vw);
+  -o-transform: translateX(-18vw);
+  transform: translateX(-18vw);
 }
 
 nav {
@@ -165,7 +167,7 @@ nav {
   margin: 0;
   list-style: none;
   position: relative;
-  margin-top: 150px;
+  margin-top: 15vh;
   text-align: center;
 }
 
@@ -233,7 +235,7 @@ nav {
 }
 .sidebar.active{
   background-color: #201f1f;
-  z-index: 1;
+  z-index: 100;
 }
 .sidebar-item.active {
   opacity: 1;
@@ -279,8 +281,8 @@ nav {
 }
 
 .fa {
-  font-size: 1.4em;
-  color: var(--ter);
+  font-size: 3.4em;
+  color: #808080;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -351,6 +353,7 @@ nav {
   position: relative;
 }
 .info-pratyaksh{
+  padding-top: 20px;
   text-align: center;
   width: 100vw;
   position: absolute;
@@ -367,6 +370,9 @@ width: 602px;
   letter-spacing: 1px;
   font-weight: 300;
   font-size: 2.8vw;
+}
+.info-pratyaksh p{
+  color: #fff;
 }
 h2{
   position: relative;
@@ -433,7 +439,7 @@ height: 100vh;
   transform: translateX(-50%);
 }
 .info-training h2,.swarm-info h2, .contact-us h2{
-  font-size: 2vw;
+  font-size: 30px;
   font-weight: bolder;
   text-transform: uppercase;
 }
@@ -505,12 +511,19 @@ h4{
 #sound-on-icon {
   z-index: 0;
   position: absolute;
+  top: -10%;
 }
 
 #sound-off-icon {
-  right: 5px;
+  right: 5%;
 }
-
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23808080' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23808080' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
 
 .switch {
   position: relative;
@@ -624,8 +637,11 @@ input:checked + .slider:before {
   font-size:1em;
 }
 .row p{
-  font-size: 18.5px;
+  font-size: 14.5px;
   letter-spacing: normal;
+}
+.contact-us .solid{
+  width: 10%;
 }
 /* heading popins black 35
 para roboto light 18.5 px */
@@ -703,7 +719,7 @@ background-size: cover; */
     font-size: 35px;
   }
   .contact-us p{
-    font-size: 18.5px;
+    font-size: 14.5px;
     color: #000000;
     letter-spacing: 1px;
   }

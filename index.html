@@ -50,7 +50,7 @@
     </div>       
      
     <!-- navigation bar -->
-    <section class="cover">
+    <section class="cover" id="home">
         <!-- nav-right -->
         <main> 
             <nav>
@@ -67,19 +67,19 @@
         
         <div class="sidebar">
             <ul class="sidebar-list">
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Home</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Philosophy</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Research and Development</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Applications</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Product Testing</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Career Opportunities</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Contact Us</a></li>
+                <li class="sidebar-item"><a href="#home" class="sidebar-anchor">Home</a></li>
+                <li class="sidebar-item"><a href="#philosophy" class="sidebar-anchor">Philosophy</a></li>
+                <li class="sidebar-item"><a href="#rnd" class="sidebar-anchor">Research and Development</a></li>
+                <li class="sidebar-item"><a href="#applications" class="sidebar-anchor">Applications</a></li>
+                <li class="sidebar-item"><a href="#testing" class="sidebar-anchor">Product Testing</a></li>
+                <li class="sidebar-item"><a href="#career" class="sidebar-anchor">Career Opportunities</a></li>
+                <li class="sidebar-item"><a href="#contact" class="sidebar-anchor">Contact Us</a></li>
 
             </ul>
         </div>
     <div class="banner">
         <video id="Vid" class="banner-vid" autoplay="false" onclick="this.play()" poster="./assets/img/thumb.png">
-            <source src="./assets/vids/banner1.mp4" type="video/mp4" >
+            <source src="./assets/vids/banner.mp4" type="video/mp4" >
         </video>
     </div>
     </section>
@@ -88,12 +88,12 @@
         <div class="logo">
             <img src="assets/img/drone-logo.png" alt="company-logo" class="img-responsive" /> 
         </div>  
-        <video id="weinnovate" autoplay="true" loop="true" loading="lazy">
+        <video id="weinnovate" muted autoplay="true" onclick="this.play()" loop="true">
             <source src="./assets/vids/drone_cta.mp4">
         </video>
     </section>
     <!-- section 2 statrs here -->
-    <section class="container-fluid pratyaksh">
+    <section class="container-fluid pratyaksh" id="philosophy">
         <div class="info-pratyaksh">
             <h2 data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="600">
                 प्रत्यक्षं किम् प्रमाणं
@@ -155,7 +155,7 @@
     <!-- section video carousel ends here -->
 
     <!-- section text carousel 1 starts here -->
-    <section class="text-carousel1">
+    <section class="text-carousel1" id="rnd">
         <div id="demo-text" class="carousel slide" data-bs-ride="carousel" >
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
@@ -188,11 +188,11 @@
             
             <!-- Left and right controls/icons -->
             <button class="carousel-control-prev" type="button" data-bs-target="#demo-text" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bg-dark"></span>
+              <span class="carousel-control-prev-icon"></span>
               <span class="sr-only">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#demo-text" data-bs-slide="next">
-              <span class="carousel-control-next-icon bg-dark"></span>
+              <span class="carousel-control-next-icon"></span>
               <span class="sr-only">Next</span>
             </button>
         </div>
@@ -200,7 +200,7 @@
     <!-- section text carousel 1 ends here -->
 
      <!-- section text carousel 2 starts here -->
-     <section>
+     <section id="applications">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -216,7 +216,7 @@
                 <div class="swarm-info text-light">
                     <h2>KEEPING A CLOSE EYE</h2>
                     <hr class="solid">
-                    <p>Our surveillance UAVs have long range and high endurance allowing enhanced monitoring periods with high zoom and<br>capabilities. These are small in size to stay undetected and are built to withstand harsh environments.</p>
+                    <p class="text-light">Our surveillance UAVs have long range and high endurance allowing enhanced monitoring periods with high zoom and<br>capabilities. These are small in size to stay undetected and are built to withstand harsh environments.</p>
                
                 </div>
                 <img src="./assets/img/06_Website-Surveillance&Security.jpg" class="d-block w-100" alt="...">
@@ -225,24 +225,35 @@
                 <div class="swarm-info text-light">
                     <h2>Withstanding every challenge with courage</h2>
                     <hr class="solid">
-                    <p>
+                    <p class="text-light">
                         Efficient testing techniques make our systems further reliable and foolproof. 
                         We utilise modelling software to simulate certain wind conditions to examine how aerodynamics will work for a particular UAV. 
                         UAVs then undergo certain strict testing parameters for every electronic, mechanical and aerodynamic Al change.</p>
 
-                    <p>
+                    <p class="text-light">
                         We have tested our UAVs successfully in the rough conditions of Pokhran, high altitudes of Ladakh, high wind pressure of Gulmarg, rainy and foggy terrain of North East and coastal areas like Andaman and Nicobar Islands.
                     </p>
                 </div>
                 <img src="./assets/img/07_Website-Testing.jpg" class="d-block w-100" alt="...">
               </div>
+              <div class="carousel-item">
+                <div class="swarm-info text-dark">
+                    <h2>KNOWLEDGE BECOMES POWER WHEN APPLY</h2>
+                    <hr class="solid">
+                    <p>
+                        We use absolute precision and unique capabilities to develop and deliver tailor-made solutions for every requirement. The application of our
+                        UAVs ranges from facilitating agriculture activities to carrying out logistics maintenance and surveillance for our forces.
+                    </p>
+                </div>
+                <img src="./assets/img/application.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -250,7 +261,7 @@
     <!-- section text carousel 2 ends here -->
 
     <!-- trainin section statrs here -->
-    <section class="training">
+    <section class="training" id="testing">
         <div class="info-training">
             <h2 data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-out-cubic" data-aos-duration="800">
                 COMPREHENSIVE TRAINING AND LIFELONG SUPPORT
@@ -274,7 +285,7 @@
             <source src= "./assets/vids/Anim_4.mp4">
         </video>
     </section>
-    <section class="explore">
+    <section class="explore" id="career">
         <div class="info-training">
             <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-out-cubic" data-aos-duration="800">
                 EXPLORE THE EXTRAORDINARY
@@ -334,7 +345,7 @@
     </div>
 </div>
     </section>
-    <section class="contact-us">
+    <section class="contact-us" id="contact">
             <h2 class="text-center" data-aos-offset="200"data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="800">
                 CONTACT US
             </h2>
@@ -384,10 +395,11 @@
 <script>
       v = document.getElementById("Vid")
       thum = document.getElementsByClassName("thumb")
+      v.load();
       v.onended = function() {
           document.getElementById("innovate").scrollIntoView();
           document.getElementById("weinnovate").load();
-          v.load();
+          
       };
     AOS.init({offset: 200});
 </script>
