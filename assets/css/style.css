@@ -17,14 +17,14 @@
   }
   h1,h2,h3,h5{
     font-family: 'Poppins Black', sans-serif;
-    font-size: 2.5vw;
+    font-size: 35px;
     letter-spacing: 2px;
   }
   p,span,a{
     font-family: 'Roboto Light', sans-serif;
-    font-size: 1.2vw;
+    font-size: 18.5px;
     font-weight: 100;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
   }
   body,
   html {
@@ -33,6 +33,10 @@
     margin: 0;
     background-color: var(--main);
   }
+  section{
+    height: 100vh !important;
+  }
+  h2
 /* nav-bar */
 section.cover{
   height: 100vh;
@@ -367,6 +371,9 @@ width: 602px;
 h2{
   position: relative;
 }
+#show-hidden-menu{
+  font-weight: bold;
+}
 .solid {
   border-top: 8px solid var(--ter);
   width: 20%;
@@ -382,15 +389,12 @@ h2{
 hr {
   margin: 0.6rem 0;
 }
-.info-pratyaksh > p{
-  margin-top: 2%;
-}
 span{
   padding: 5px;
   border-radius:50%;
 }
 .img-pratyaksh{
-  padding-top: 8%;
+  padding-top: 6%;
   width: 100vw;
   text-align: center;
 }
@@ -457,7 +461,9 @@ h3{
   position: absolute;
 }
 /* text carousel end */
-
+.carousel-item img{
+  height: 100vh;
+}
 h4{
   position: absolute;
   left: 50%;
@@ -618,7 +624,7 @@ input:checked + .slider:before {
   font-size:1em;
 }
 .row p{
-  font-size: 1vw;
+  font-size: 18.5px;
   letter-spacing: normal;
 }
 /* heading popins black 35
@@ -658,10 +664,10 @@ background-size: cover; */
     background-position: center center;
   }
   .info-pratyaksh h2 {
-    font-size: 4vw;
+    font-size: 30px;
   }
   .info-pratyaksh > p {
-      font-size: 1.8vw;
+      font-size: 18.5px;
       letter-spacing: 1px;
       padding: 2px;
   }
@@ -684,20 +690,20 @@ background-size: cover; */
     background-size: cover;
   }
   .info-training h2{
-    font-size: 5vw;
+    font-size: 35px;
     color: #000000;
     font-weight: 600;
   }
   .info-training>p{
-    font-size: 2vw;
+    font-size: 18.5;
     color: #000000;
     letter-spacing: 1px;
   }
   .contact-us h2 {
-    font-size: 5vw;
+    font-size: 35px;
   }
   .contact-us p{
-    font-size: 2vw;
+    font-size: 18.5px;
     color: #000000;
     letter-spacing: 1px;
   }
