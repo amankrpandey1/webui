@@ -703,5 +703,11 @@ background-size: cover; */
     height: max-content;
     background: #95d1f4 !important;
   }
-
+  .svg-icon {
+    width: 2em;
+    height: 2em;
+  }
+  #sound-off-icon,#sound-on-icon{
+    top:10%;
+  }
 }
