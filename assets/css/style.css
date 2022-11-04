@@ -117,11 +117,11 @@ section.cover{
 
 .nav-right.visible-xs .active .bar {
   background-color: var(--second);
-  -webkit-transition: all .7s ease;
-  -moz-transition: all .7s ease;
-  -ms-transition: all .7s ease;
-  -o-transition: all .7s ease;
-  transition: all .7s ease;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .button.active .top {
@@ -176,35 +176,56 @@ nav {
 }
 
 .sidebar-item:first-child {
-  -webkit-transition: all .7s .2s ease-in-out;
-  -moz-transition: all .7s .2s ease-in-out;
-  -ms-transition: all .7s .2s ease-in-out;
-  -o-transition: all .7s .2s ease-in-out;
-  transition: all .7s .2s ease-in-out;
+  -webkit-transition: all .2s .2s ease-in-out;
+  -moz-transition: all .2s .2s ease-in-out;
+  -ms-transition: all .2s .2s ease-in-out;
+  -o-transition: all .2s .2s ease-in-out;
+  transition: all .2s .2s ease-in-out;
 }
 
 .sidebar-item:nth-child(2) {
-  -webkit-transition: all .7s .4s ease-in-out;
-  -moz-transition: all .7s .4s ease-in-out;
-  -ms-transition: all .7s .4s ease-in-out;
-  -o-transition: all .7s .4s ease-in-out;
-  transition: all .7s .4s ease-in-out;
+  -webkit-transition: all .2s .4s ease-in-out;
+  -moz-transition: all .2s .4s ease-in-out;
+  -ms-transition: all .2s .4s ease-in-out;
+  -o-transition: all .2s .4s ease-in-out;
+  transition: all .2s .4s ease-in-out;
 }
 
 .sidebar-item:nth-child(3) {
-  -webkit-transition: all .7s .6s ease-in-out;
-  -moz-transition: all .7s .6s ease-in-out;
-  -ms-transition: all .7s .6s ease-in-out;
-  -o-transition: all .7s .6s ease-in-out;
-  transition: all .7s .6s ease-in-out;
+  -webkit-transition: all .2s .6s ease-in-out;
+  -moz-transition: all .2s .6s ease-in-out;
+  -ms-transition: all .2s .6s ease-in-out;
+  -o-transition: all .2s .6s ease-in-out;
+  transition: all .2s .6s ease-in-out;
+}
+.sidebar-item:nth-child(4) {
+  -webkit-transition: all .2s .8s ease-in-out;
+  -moz-transition: all .2s .8s ease-in-out;
+  -ms-transition: all .2s .8s ease-in-out;
+  -o-transition: all .2s .8s ease-in-out;
+  transition: all .2s .8s ease-in-out;
+}
+.sidebar-item:nth-child(5) {
+  -webkit-transition: all .2s 1s ease-in-out;
+  -moz-transition: all .2s 1s ease-in-out;
+  -ms-transition: all .2s 1s ease-in-out;
+  -o-transition: all .2s 1s ease-in-out;
+  transition: all .2s 1s ease-in-out;
+}
+.sidebar-item:nth-child(6) {
+  -webkit-transition: all .2s 1.2s ease-in-out;
+  -moz-transition: all .2s 1.2s ease-in-out;
+  -ms-transition: all .2s 1.2s ease-in-out;
+  -o-transition: all .2s 1.2s ease-in-out;
+  transition: all .2s 1.2s ease-in-out;
 }
 
 .sidebar-item:last-child {
-  -webkit-transition: all .7s .8s ease-in-out;
-  -moz-transition: all .7s .8s ease-in-out;
-  -ms-transition: all .7s .8s ease-in-out;
-  -o-transition: all .7s .8s ease-in-out;
-  transition: all .7s .6s ease-in-out;
+  -webkit-transition: all .2s 1.4s ease-in-out;
+  -moz-transition: all .2s 1.4s ease-in-out;
+  -ms-transition: all .2s 1.4s ease-in-out;
+  -o-transition: all .2s 1.4s ease-in-out;
+  transition: all .2s 1.4s ease-in-out;
 }
 .sidebar.active{
   background-color: #201f1f;
@@ -221,7 +242,7 @@ nav {
 .sidebar-anchor {
   color: var(--second);
   text-decoration: none;
-  font-size: 1.8em;
+  font-size: 1em;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 7px;
@@ -234,12 +255,12 @@ nav {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: var(--second);
-  -webkit-transition: all .7s ease-in-out;
-  -moz-transition: all .7s ease-in-out;
-  -ms-transition: all .7s ease-in-out;
-  -o-transition: all .7s ease-in-out;
-  transition: all .7s ease-in-out;
+  background-color: var(--ter);
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .sidebar-anchor:hover:before {
@@ -337,6 +358,11 @@ overflow: hidden;
 height: 612px;
 width: 602px;
 }
+.info-pratyaksh h2{
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 2.8vw;
+}
 h2{
   position: relative;
 }
@@ -347,6 +373,9 @@ h2{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.info-pratyaksh .solid{
+  width: 10%;
 }
 
 hr {
@@ -473,7 +502,7 @@ h4{
 #switch-container {
   top: 2%;
   left: 2%;
-  position: fixed;
+  position: absolute;
   z-index: 2;
 }
 
@@ -599,7 +628,10 @@ input:checked + .slider:before {
   transform: translateX(-50%);
   font-size:1em;
 }
-
+.row p{
+  font-size: 1vw;
+  letter-spacing: normal;
+}
 /* heading popins black 35
 para roboto light 18.5 px */
 

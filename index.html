@@ -15,6 +15,7 @@
     
 
     <!-- style sheets -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="./assets/css/style.css" rel="stylesheet">
@@ -66,10 +67,14 @@
         
         <div class="sidebar">
             <ul class="sidebar-list">
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 1</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 2</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 3</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Item 4</a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Home</a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Philosophy</a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Research and Development</a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Applications</a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Product Testing</a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Career Opportunities</a></li>
+                <li class="sidebar-item"><a href="#" class="sidebar-anchor">Contact Us</a></li>
+
             </ul>
         </div>
     <div class="banner">
@@ -79,7 +84,7 @@
     </div>
     </section>
     <!-- cover ends here -->
-    <section class="container-fluid innovate">
+    <section id="innovate" class="container-fluid innovate">
         <div class="logo">
             <img src="assets/img/drone-logo.png" alt="company-logo" class="img-responsive" /> 
         </div>
@@ -90,9 +95,12 @@
     <!-- section 2 statrs here -->
     <section class="container-fluid pratyaksh">
         <div class="info-pratyaksh">
-            <h2>प्रत्यक्षं किम् प्रमाणं</h2>
-            <hr class="solid">
-            <p>“What is self-evident needs no proof.” is the way we function. We are driven to deliver on expectations time
+            <h2 data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="600">
+                प्रत्यक्षं किम् प्रमाणं
+            </h2>
+            <hr class="solid" data-aos="fade-right" data-aos-delay="1200" data-aos-easing="ease-out-cubic" data-aos-duration="1100">
+            <p data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                “What is self-evident needs no proof.” is the way we function. We are driven to deliver on expectations time
                 and again.<br> 
                 We believe in ethical business practices as much as we do in our capabilities.
             </p>
@@ -245,17 +253,17 @@
     <!-- trainin section statrs here -->
     <section class="training">
         <div class="info-training">
-            <h2>
+            <h2 data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-out-cubic" data-aos-duration="800">
                 COMPREHENSIVE TRAINING AND LIFELONG SUPPORT
             </h2>
-            <hr class="solid">
-            <p>
+            <hr class="solid" data-aos-offset="400" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
+            <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
                 We impart comprehensive two-month training to the personnel in our testing facility. 
                 The training includes initial hands-on simulation, field training for UAV readiness and flights,
                 environmental awareness for safe UAV operations, maintenance and life cycle of the UAV components, 
                 and autonomous operation from the ground control station.
             </p>
-            <p>
+            <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-out-cubic" data-aos-duration="1200">
                 We also provide 24×7 on-site training and operational support to the users, 
                 assisting them to operate their UAV setup successfully.
             </p>
@@ -269,19 +277,19 @@
     </section>
     <section class="explore">
         <div class="info-training">
-            <h2>
+            <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-out-cubic" data-aos-duration="800">
                 EXPLORE THE EXTRAORDINARY
             </h2>
-            <hr class="solid">
-            <p>
+            <hr class="solid" data-aos-offset="300" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
+            <p data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
                 At Raphe, we love people who are driven, passionate and think out of the box. Join India’s UAV pioneers and find a culture of care & personal touch fueled by the power of passion.
             </p>
-            <h3>COME, MANUFACTURE MAGIC WITH US!</h3>
-            <p>
+            <h3 data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-out-cubic" data-aos-duration="800">COME, MANUFACTURE MAGIC WITH US!</h3>
+            <p data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
                 We are searching for the best talents across R&D, engineering, manufacturing and administrative segments.
             </p>
         </div>
-        <h4 class="btn btn-danger" id="show-hidden-menu">Show more</h4>
+        <h4 class="btn btn-light" id="show-hidden-menu">Show more</h4>
     </section>
     <section class="hidden-menu" style="display: none;">
     <div class="container">
@@ -289,7 +297,7 @@
             <div class="col card-img">
                 <img width="496" height="331" src="./assets/img/wvefs_-1024x683.jpeg" alt="">
             </div>
-            <div class="col hidden-text">
+            <div class="col hidden-text" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
                 <h5>
                     EAT HEALTHY
                 </h5>
@@ -299,7 +307,7 @@
             </div>
         </div>
         <div class="row hidden-row">
-            <div class="col hidden-text">
+            <div class="col hidden-text" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
                 <h5>
                     STAY FIT
                 </h5>
@@ -311,15 +319,15 @@
 
             </div>
         </div>
-        <div class="row hidden-row">
+        <div class="row hidden-row" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
             <div class="col card-img">
                 <img width="496" height="331" src="./assets/img/abrve-1-1024x755.jpeg" alt="">
             </div>
             <div class="col hidden-text">
-                <h5>
+                <h5 data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
                     FEEL GOOD
                 </h5>
-                <p>
+                <p data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
                     Many unconventional workstations to break the monotony of an ordinary day are installed inside the office to keep one's mind fresh and creative.
                 </p>
             </div>
@@ -328,51 +336,62 @@
 </div>
     </section>
     <section class="contact-us">
-            <h2 class="text-center">
+            <h2 class="text-center" data-aos-offset="200"data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="800">
                 CONTACT US
             </h2>
-            <hr class="solid">
+            <hr class="solid" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <br>
         <div class="container text-center">
-            <div class="row text-center">
-                <div class="col">
-                    <b>HEADQUARTERS</b><br>
-                    B 200, Block B, Phase-2<br>
-                    Noida, Uttar Pradesh-201305
+            <div class="row text-lg-start">
+                <div class="col-md-3">
+                    <p> HEADQUARTERS<br>
+                        B 200, Block B, Phase-2<br>
+                        Noida, Uttar Pradesh-201305
+                    </p>
                 </div>
-                <div class="col">
-                    <b>CHANDIGARH</b><br>
-                    # 2734, Sector 38-C46<br>
-                    Chandigarh-160036   
+                <div class="col-md-3">
+                    <p>
+                        CHANDIGARH<br>
+                        # 2734, Sector 38-C46<br>
+                        Chandigarh-160036  
+                    </p> 
                 </div>
-                <div class="col">
-                    <b>BANGALORE</b><br>
-                    # 811, 10th A Main, Suite #356, First floor,<br> Indiranagar,
-                     Bangalore-560038
+                <div class="col-md-3">
+                    <p>
+                        BANGALORE<br>
+                        # 811, 10th A Main, Suite #356, First floor,<br> Indiranagar,
+                        Bangalore-560038
+                    </p>
                 </div>
-                <div class="col">
-                    <b>FOR ANY QUERY</b><br>
-                    Call Toll free: 1800-123-RAPHE (1800-123-72743)<br>
-                    E-mail: info@mphibr.com
+                <div class="col-md-3">
+                    <p>
+                        FOR ANY QUERY<br>
+                        Call Toll free: 1800-123-RAPHE <br>(1800-123-72743)<br>
+                        E-mail: info@mphibr.com
+                    </p>
                 </div>
             </div>
-            <div class="logo-bottom">
+            <!-- <div class="logo-bottom">
                 <img src="./assets/img/drone-logo.png">
             </div>
             <p class="copy">
                 Copyright 2022 | All Rights Reserved
-            </p>
+            </p> -->
         </div>
     </section>
+
+<!-- scripts files note: do not change the order -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
 <script>
       v = document.getElementById("Vid")
       thum = document.getElementsByClassName("thumb")
       v.onended = function() {
-          document.getElementById("weinnovate").scrollIntoView();
+          document.getElementById("innovate").scrollIntoView();
           document.getElementById("weinnovate").load();
           v.load();
       };
-    </script>
+    AOS.init({offset: 200});
+</script>
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
